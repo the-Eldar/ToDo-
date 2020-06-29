@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url();
+}
+.wrap {
+  display: flex;
+  margin-top: 10vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h2 {
+  font-family: monospace;
+  font-size: 36px;
+  color: grey;
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: grey;
+}
+input {
+  border: none;
+  border-radius: 0.5px;
+  padding: 3px 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.input {
+  padding: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.btn {
+  border: 0.5px solid lightgray;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
