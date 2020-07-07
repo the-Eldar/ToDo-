@@ -4,16 +4,28 @@ const list = document.querySelector(".list");
 let count = document.querySelector(".count");
 let countOne = 0;
 
+// Сохранение данных в localStorage
+// let listMass = [];
+// if (localStorage.getItem("todo")) {
+//   listMass = JSON.parse(localStorage.getItem("todo"));
+// }
+
+// Добавление события
 btn.addEventListener("click", addList);
 
 function addList() {
   showList(input.value);
-  console.log(input.value);
+  // listMass.push(input.value);
+  // console.log(listMass);
+  // console.log(input.value);
   countOne++;
   count.innerHTML = "ВСЕГО :" + countOne;
   input.value = "";
+  // Сохранение данных в localStorage
+  // localStorage.setItem("todo", JSON.stringify(listMass));
 }
 
+// Создание DOM-дерева
 function showList(value) {
   const li = document.createElement("li");
   li.className = "li";
